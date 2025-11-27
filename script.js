@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
 setInterval(fetchWeather, 300000);
 
 // BUS STOPS CONFIG
+// Stoppesteder befinner seg i URL'en i entur kartet; https://entur.no/kart
 const STOPS = [
   { id: "NSR:StopPlace:44029", name: "Tillerterminalen" },
   { id: "NSR:StopPlace:41587", name: "Tiller VGS" },
