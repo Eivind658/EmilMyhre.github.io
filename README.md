@@ -31,7 +31,7 @@ TillerScreen fetches live bus departures using:
 
 * `NSR:StopPlace:44029` — **Tillerterminalen**
 * `NSR:StopPlace:41587` — **Tiller VGS**
-* `NSR:StopPlace:44031` - **City Syd E6**
+* `NSR:StopPlace:44031` — **City Syd E6**
 
 ---
 
