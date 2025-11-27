@@ -1,9 +1,14 @@
 // CLOCK
 function updateClock() {
   const now = new Date();
+  
   document.getElementById("clock").textContent =
-    now.toLocaleTimeString("no-NO", { hour12: false });
+    now.toLocaleTimeString("no-NO", { 
+      hour12: false,
+      timeZone: "Europe/Oslo"
+    });
 }
+
 setInterval(updateClock, 1000);
 updateClock();
 
