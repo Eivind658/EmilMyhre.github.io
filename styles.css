@@ -12,9 +12,9 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background-size: 150% 150%;
+  background-size: 130%;
   background-position: center;
-  animation: backgroundcycle 92.7s infinite, pan-background 300s infinite;
+  animation: backgroundcycle 92.7s infinite, pan-background 700s infinite;
 }
 
 
