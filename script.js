@@ -57,6 +57,54 @@ async function fetchDetailedWeather() {
   }
 }
 
+// ===============================
+// BAKGRUNN SLIDESHOW, erstatter eivind sin
+// ===============================
+
+const BACKGROUND_IMAGES = [
+  'background1.jpg',
+  'background2.jpg',
+  'background3.jpg',
+  'background4.jpg',
+  'background5.jpg'
+];
+
+let bgIndex = 0;
+let activeBg = 0;
+
+let bgLayers;
+
+document.addEventListener('DOMContentLoaded', () => {
+  bgLayers = [
+    document.querySelector('.bg-1'),
+    document.querySelector('.bg-2')
+  ];
+
+  if (!bgLayers[0] || !bgLayers[1]) {
+    console.warn('Background layers not found');
+    return;
+  }
+
+  // sett første bilde
+  bgLayers[0].style.backgroundImage =
+    `url(${BACKGROUND_IMAGES[0]})`;
+
+  setInterval(switchBackground, 15000); // 15 sek
+});
+
+function switchBackground() {
+  const next = (activeBg + 1) % 2;
+  bgIndex = (bgIndex + 1) % BACKGROUND_IMAGES.length;
+
+  bgLayers[next].style.backgroundImage =
+    `url(${BACKGROUND_IMAGES[bgIndex]})`;
+
+  bgLayers[next].style.opacity = 1;
+  bgLayers[activeBg].style.opacity = 0;
+
+  activeBg = next;
+}
+
 function getWeatherIcon(symbolCode) {
   const baseSymbol = symbolCode.split('_')[0];
   

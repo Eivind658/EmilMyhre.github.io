@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tiller Info Screen</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="backgroundcycle">
-  
+
+  <div class="bg bg-1"></div>
+  <div class="bg bg-2"></div>
+
+
   <div id="clock"></div>
-  
+
   <div class="welcome-container">
     <h3>Velkommen til Informasjonsteknologi og Mediaproduksjon arealet!</h3>
   </div>
@@ -20,9 +26,9 @@
       <div class="weather-header">
         <h2>Været på Tiller</h2>
         <div id="weather-icon">
-</div>
+        </div>
       </div>
-      
+
       <div class="current-weather">
         <div class="temperature" id="weather-temp">--°</div>
         <div class="weather-desc" id="weather-description">Laster...</div>
@@ -47,24 +53,24 @@
       </div>
 
       <div class="weather-forecast">
-        <h2 class="detail-label" >Neste timer</h2>
+        <h2 class="detail-label">Neste timer</h2>
         <div class="forecast-items" id="weather-forecast">
         </div>
       </div>
     </div>
 
     <!-- Bus Section -->
-      <div id="bus-container" class="bus-container">
-        <div class="bus-header">
-          <div class="slideshow-dots">
-            <div class="slide-dot active" data-slide="0"></div>
-            <div class="slide-dot" data-slide="1"></div>
-            <div class="slide-dot" data-slide="2"></div>
-          </div>
-          <h2 id="bus-title" class="stop-title">Henter...</h2>
+    <div id="bus-container" class="bus-container">
+      <div class="bus-header">
+        <div class="slideshow-dots">
+          <div class="slide-dot active" data-slide="0"></div>
+          <div class="slide-dot" data-slide="1"></div>
+          <div class="slide-dot" data-slide="2"></div>
         </div>
-        <div id="bus-table" class="bus-table"></div>
+        <h2 id="bus-title" class="stop-title">Henter...</h2>
       </div>
+      <div id="bus-table" class="bus-table"></div>
+    </div>
   </div>
 
   <div class="credit-container">

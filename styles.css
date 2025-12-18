@@ -7,55 +7,24 @@ body {
   cursor: none;
 }
 
-.backgroundcycle {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
+.bg {
+  position: fixed;
+  inset: 0;
   background-size: 130%;
   background-position: center;
-  animation: backgroundcycle 92.7s infinite, pan-background 700s infinite;
+  transition: opacity 2.5s ease-in-out;
+  will-change: opacity;
+  z-index: -1;
 }
 
-
-@keyframes pan-background {
-    0% {
-        background-position: 0% 0%; 
-    }
-    25% {
-        background-position: 100% 20%; 
-    }
-    50% {
-        background-position: 0% 10%; 
-    }
-    75% {
-        background-position: 100% 2%;
-    }
-    100% {
-        background-position: 0% 0%; 
-    }
+.bg-1 {
+  opacity: 1;
 }
 
-@keyframes backgroundcycle {
-  0% {
-    background-image: url('background1.jpg');
-  }
-  20% {
-    background-image: url('background2.jpg');
-  }
-  40% {
-    background-image: url('background3.jpg');
-  }
-  60% {
-    background-image: url('background4.jpg');
-  }
-  80% {
-    background-image: url('background5.jpg');
-  }
-  100% {
-    background-image: url('background1.jpg');
-  } 
+.bg-2 {
+  opacity: 0;
 }
+
 
 .main-content {
   display: grid;
@@ -371,23 +340,23 @@ h2 {
 }
 
 .bus-time.soon {
-  background: rgba(255, 107, 107, 0.3);
-  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
-  color: #ff7676;
+  background: rgba(255, 80, 80, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 80, 80, 0.45);
+  color: #ffe6e6;
   animation: pulse 1s ease-in-out infinite;
 }
 
 .bus-time.medium {
-  background: rgb(226, 173, 0, 0.3);
-  box-shadow: 0 4px 12px rgba(255, 173, 0, 0.3);
-  color: #ffed4c;
+  background: rgba(230, 165, 0, 0.45);
+  box-shadow: 0 4px 12px rgba(230, 165, 0, 0.45);
+  color: #fff8c4;
   animation: pulse 3s ease-in-out infinite;
 }
 
 .bus-time.later {
-  background: rgba(76, 217, 100, 0.3);
-  box-shadow: 0 4px 12px rgba(76, 217, 100, 0.3);
-  color: #5aff75;
+  background: rgba(60, 200, 90, 0.4);
+  box-shadow: 0 4px 12px rgba(60, 200, 90, 0.45);
+  color: #e6ffed;
 }
 
 @keyframes pulse {
