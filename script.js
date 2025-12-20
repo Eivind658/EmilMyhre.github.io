@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
   bgLayers[0].style.backgroundImage =
     `url(${BACKGROUND_IMAGES[0]})`;
 
-  setInterval(switchBackground, 22000); // 15 sek
+  setInterval(switchBackground, 15000); // 15 sek
 });
 
 function switchBackground() {
@@ -98,6 +98,13 @@ function switchBackground() {
 
   bgLayers[next].style.backgroundImage =
     `url(${BACKGROUND_IMAGES[bgIndex]})`;
+
+  bgLayers[next].style.animation = 'none';
+  void bgLayers.offsetWidth;
+
+  const direction = Math.random() < 0.5 ? 'left' : 'right';
+  
+  bgLayers[next].style.animation = `${direction} 20s ease-in-out forwards`;
 
   bgLayers[next].style.opacity = 1;
   bgLayers[activeBg].style.opacity = 0;
