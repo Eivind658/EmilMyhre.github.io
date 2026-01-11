@@ -66,7 +66,9 @@ const BACKGROUND_IMAGES = [
   'WinterImg/background2.jpg',
   'WinterImg/background3.jpg',
   'WinterImg/background4.jpg',
-  'WinterImg/background5.jpg'
+  'WinterImg/background5.jpg',
+  'WinterImg/background6.jpg',
+  'WinterImg/background7.jpg'
 ];
 
 let bgIndex = 0;
