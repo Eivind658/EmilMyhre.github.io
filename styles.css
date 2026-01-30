@@ -80,8 +80,8 @@ body {
   margin: 0 0 10px 0;
 }
 
-h3 {
-  font-size: 24px;
+h3, .detail-label, .weather-icon {
+  font-size: 2vh;
   font-weight: 600;
   color: white;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -146,12 +146,7 @@ h2 {
   text-align: center;
 }
 
-.detail-label {
-  font-size: 25px;
-  opacity: 0.9;
-  margin-bottom: 4px;
-  color: rgba(255, 255, 255, 0.9);
-}
+
 
 .weather-forecast {
   margin-top: 20px;
