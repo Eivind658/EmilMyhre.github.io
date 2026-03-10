@@ -1,6 +1,6 @@
 
 // Update clock every second
-setInterval(UpdateClock, 1000);
+//setInterval(UpdateClock, 1000);
 
 //Update background
 setInterval(UpdateBackground, 10000);
