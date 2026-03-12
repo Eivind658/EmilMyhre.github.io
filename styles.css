@@ -96,7 +96,7 @@ h3, .detail-label, .weather-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 43%;
+  padding-left: 40%;
   margin-bottom: 15px;
 }
 
