@@ -1,13 +1,16 @@
+let backgroundsA = el.background;
+
 let imageIndex = 0;
 
-function UpdateBackground() {
-    el.background[imageIndex].classList.remove("showing");
+function UpdateBackground(){
+    backgroundsA[imageIndex].classList.remove("showing");
+
     imageIndex++;
-    if (imageIndex >= el.background.length) {
+
+    if (imageIndex >= backgroundsA.length) 
+    {
         imageIndex = 0;
     }
-    el.background[imageIndex].classList.add("showing");
+
+    backgroundsA[imageIndex].classList.add("showing");
 }
-
-
-setInterval(UpdateBackground, 3000);
